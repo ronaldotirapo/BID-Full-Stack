@@ -1,0 +1,26 @@
+h1,
+p,
+table {
+    color: blue;
+    background-color: tan;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin: 16px;
+}
+
+span {
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+}
+
+table {
+    background-color: aliceblue;
+    border: 1px solid steelblue;
+    text-align: center;
+}
+
+td {
+    border: 1px solid steelblue;
+}
