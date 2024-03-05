@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.ejemplo {
+    display: flex;
+    justify-content: space-around;
+
+    width: 800px;
+    margin: 50px 0;
+    background-color: #d6e9fe;
+}
+
+.item img {
+    display: block;
+}
+
+.item-relative {
+    /* El elemento aún está en el flujo de elemntos y
+    tiene como límite permitido moverse al borde de su contenedor */
+    position: relative;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+}
+
+.item-absolute {
+    /* Sale del flujo de elementos (como si no existiera),
+    tiene como base el contenedor más cercano con posición no static,
+    si no aplico un offset con top, etc. solo sobresale de donde estaba*/
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.container .absolute {
+    display: relative;
+}
+
+.item-fixed {
+    /* Sale del flujo de elementos 
+    y no aparece hasta que se aplica un offset,
+    además su posición se basa en la parte visible del navegador */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.item-sticky {
+    /* Se comporta como relative y luego se comporta como fixed
+    cuando sale fuera de la parte visible del navegador,
+    tiene como límite el tamaño del elemento padre 
+    (En este caso el body con height 1200px) */
+    position: sticky;
+    top: 100px;
+}

@@ -1,0 +1,27 @@
+div {
+    background-color: #ff0000;
+    width: 100px;
+    height: 100px;
+
+    /* Inline no acepta width y height (ancho y alto)
+    pero padding si acepta */
+    display: inline;
+    padding: 10px;
+}
+
+p {
+    background-color: blue;
+    /* Inline block si acepta width y height (ancho y alto)*/
+    display: inline-block;
+    width: 100%;
+    height: 2rem;
+}
+
+a {
+    background-color: yellow;
+    /* Block ocupará todo el ancho de bloque, acepta width y height 
+    y hará un salto de linea */
+    display: block;
+    width: 100px;
+    height: 50px;
+}
