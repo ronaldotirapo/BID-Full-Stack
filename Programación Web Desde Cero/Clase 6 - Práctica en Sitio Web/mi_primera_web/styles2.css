@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Anton', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+header nav {
+    max-width: 1200px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header a i {
+    color: white;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+#seccion-principal {
+    padding: 1.5rem;
+}
+
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.acerca-de {
+    max-width: 30rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.acerca-imagen img {
+    width: 12rem;
+    height: auto;
+    border-radius: 0.6rem;
+    margin: 0 0 1.5rem 0;
+}
+
+.seccion-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-2 img {
+    max-width: 36rem;
+    height: auto;
+    border-radius: 0.6rem;
+}
+
+.seccion-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.estudios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.estudio {
+    width: 300px;
+    padding: 1.5rem;
+}
+
+.estudio img {
+    width: 20rem; /* Define el ancho del cuadrado */
+    height: 20rem; /* Define la altura del cuadrado */
+    object-fit: cover; /* Asegura que la imagen cubra todo el cuadrado */
+    object-position: center; /* Centra la imagen en el cuadrado */
+    border-radius: 0.6rem;
+}
+
+footer {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+footer .social i {
+    color: white;
+    font-size: 3rem;
+    padding: 1rem 1rem;
+}
