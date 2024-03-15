@@ -1,0 +1,146 @@
+/* Reset de estilos */
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos de header */
+.logo {
+    width: 6rem;
+    height: auto;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+
+}
+
+.header {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__list {
+    display: flex;
+    list-style: none;
+}
+
+.navigation__item {
+    margin-right: 20px;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navigation__link:hover {
+    color: #ff6347;
+}
+
+.main {
+    padding: 1.5rem;
+}
+
+/* Estilos de secciones */
+.section {
+    padding: 40px 0;
+}
+
+.section__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.section__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about,
+.menu__item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurante {
+    width: 60%;
+    border-radius: 0.3rem;
+}
+
+.menu {
+    background-color: #f9f9f9;
+}
+
+.contact {
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+/* Estilos de footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.about,
+.menu,
+.contact {
+    animation: fadeIn 1s ease;
+    padding: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation__list {
+        margin-top: 20px;
+    }
+
+    .navigation__item {
+        margin-right: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .restaurante {
+        width: 100%;
+    }
+
+}

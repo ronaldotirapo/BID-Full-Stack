@@ -1,0 +1,324 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Anton', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilos de secciones */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 2rem;
+    color: white;
+    float: right;
+    margin: 3rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+header nav {
+    max-width: 1200px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header a i {
+    color: white;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+#seccion-principal {
+    padding: 1.5rem;
+}
+
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.acerca-de {
+    max-width: 29rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.acerca-imagen img {
+    width: 12rem;
+    height: auto;
+    border-radius: 0.6rem;
+    margin: 0 0 1.5rem 0;
+}
+
+.seccion-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 768px;
+    padding: 1.5rem 1.5rem;
+    text-align: left;
+}
+
+.hobbies img {
+    object-fit: cover;
+    object-position: center;
+    width: 39%;
+    height: 24rem;
+    /* Añade una altura para definir el tamaño del contenedor de la imagen */
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+}
+
+.seccion-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.estudios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.estudio {
+    width: 300px;
+    padding: 1.5rem;
+}
+
+.estudio img {
+    width: 20rem;
+    /* Define el ancho del cuadrado */
+    height: 20rem;
+    /* Define la altura del cuadrado */
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el cuadrado */
+    object-position: center;
+    /* Centra la imagen en el cuadrado */
+    border-radius: 0.6rem;
+}
+
+footer {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    max-width: 1200px;
+}
+
+
+.form-header {
+    text-align: center;
+    background-color: black;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+    background-color: dimgray;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+
+    width: 100%;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #ffffff;
+    background-color: #5995da;
+
+
+    border: none;
+    border-radius: 3px;
+
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+footer .social i {
+    color: white;
+    font-size: 3rem;
+    padding: 1rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 6.9rem;
+        left: 100%;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        transition: all 0.5s;
+    }
+
+    .inactive {
+        left: 0%;
+    }
+
+    header nav ul li {
+        margin: 1rem 0;
+    }
+
+
+    .acerca-de {
+        text-align: center;
+        width: 100%;
+    }
+
+    .acerca-imagen {
+        width: 100%;
+        text-align: center;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .hobbies {
+        flex-direction: column;
+    }
+
+    .hobbies img {
+        background-size: cover;
+        width: 100%;
+    }
+}
