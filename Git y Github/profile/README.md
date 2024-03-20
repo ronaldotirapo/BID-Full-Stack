@@ -21,3 +21,5 @@
 ## Clase 1 - Ejercicio
 
 ### Hola, soy Ronaldo! Desarollador Full Stack
+
+#### Soy un apasionado de la tecnología enfocado en desarrollo Frontend con Angular que busca mejorar la experiencia y usabilidad de los usuarios
