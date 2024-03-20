@@ -19,3 +19,5 @@
 - Repository (remoto)
 
 ## Clase 1 - Ejercicio
+
+### Hola, soy Ronaldo! Desarollador Full Stack
