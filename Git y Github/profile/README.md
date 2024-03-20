@@ -14,6 +14,7 @@
 | git brach "nueva rama"                 | Crear una nueva rama                    |
 | git brach                              | Lista todas las ramas                   |
 | git checkout "rama"                    | Cambia de posición al nombre de la rama |
+| git commit -amend                      | Permite editar el último commit         |
 
 ## Estados de Git
 
