@@ -22,4 +22,10 @@
 
 ### Hola, soy Ronaldo! Desarollador Full Stack
 
-#### Soy un apasionado de la tecnología enfocado en desarrollo Frontend con Angular que busca mejorar la experiencia y usabilidad de los usuarios
+### Acerca de mí
+
+Soy un apasionado de la tecnología enfocado en desarrollo Frontend con Angular que busca mejorar la experiencia y usabilidad de los usuarios
+
+### Contacto
+
+Si deseas contactarme puede hacerlo mediante mi LinkedIn
