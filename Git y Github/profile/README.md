@@ -2,15 +2,18 @@
 
 ## Comandos Git
 
-| Código                                 | Descripción                                            |
-| -------------------------------------- | ------------------------------------------------------ |
-| git config --global user.name "nombre" | Configura el nombre globalmente                        |
-| git config --global user.email "email" | Configura el email globalmente                         |
-| git config --list                      | Lista las configuraciones                              |
-| git init                               | Para iniciar un repositorio                            |
-| git status                             | Para ver el estado del repostorio                      |
-| git commit -m "mensaje"                | Hace un commit con comentario largo                    |
-| git branch -D "nombre de la rama"      | Elimina definitivamente una rama (usar con precaución) |
+| Código                                            | Descripción                                                                                                                               |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| git config --global user.name "nombre"            | Configura el nombre globalmente                                                                                                           |
+| git config --global user.email "email"            | Configura el email globalmente                                                                                                            |
+| git config --list                                 | Lista las configuraciones                                                                                                                 |
+| git init                                          | Para iniciar un repositorio                                                                                                               |
+| git status                                        | Para ver el estado del repostorio                                                                                                         |
+| git commit -m "mensaje"                           | Hace un commit con comentario largo                                                                                                       |
+| git branch -D "nombre de la rama"                 | Elimina definitivamente una rama (usar con precaución)                                                                                    |
+| git remote add origin "url de repositorio remoto" | Establece un repositorio remoto llamado origin (puede colocarse otro nombre)                                                              |
+| git branch -M "nuevo nombre"                      | Cambia el nombre actual de la rama                                                                                                        |
+| git push -u origin "nombre de rama"               | Sube los cambios al repositorio remoto "origin" a la rama especificada y -u establece dicha rama como la "upstream" o rama de seguimiento |
 
 ## Estados de Git
 
