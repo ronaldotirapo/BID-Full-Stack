@@ -2,14 +2,15 @@
 
 ## Comandos Git
 
-| Código                                 | Descripción                         |
-| -------------------------------------- | ----------------------------------- |
-| git config --global user.name "nombre" | Configura el nombre globalmente     |
-| git config --global user.email "email" | Configura el email globalmente      |
-| git config --list                      | Lista las configuraciones           |
-| git init                               | Para iniciar un repositorio         |
-| git status                             | Para ver el estado del repostorio   |
-| git commit -m "mensaje"                | Hace un commit con comentario largo |
+| Código                                 | Descripción                                            |
+| -------------------------------------- | ------------------------------------------------------ |
+| git config --global user.name "nombre" | Configura el nombre globalmente                        |
+| git config --global user.email "email" | Configura el email globalmente                         |
+| git config --list                      | Lista las configuraciones                              |
+| git init                               | Para iniciar un repositorio                            |
+| git status                             | Para ver el estado del repostorio                      |
+| git commit -m "mensaje"                | Hace un commit con comentario largo                    |
+| git branch -D "nombre de la rama"      | Elimina definitivamente una rama (usar con precaución) |
 
 ## Estados de Git
 
