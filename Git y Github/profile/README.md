@@ -30,6 +30,11 @@
 
 Soy un apasionado de la tecnología enfocado en desarrollo Frontend con Angular que busca mejorar la experiencia y usabilidad de los usuarios
 
+### Idiomas
+
+- Español nativo
+- Inglés básico profesional
+
 ### Contacto
 
 Si deseas contactarme puede hacerlo mediante mi LinkedIn
