@@ -29,3 +29,7 @@ Soy un apasionado de la tecnología enfocado en desarrollo Frontend con Angular 
 ### Contacto
 
 Si deseas contactarme puede hacerlo mediante mi LinkedIn
+
+### Habilidades
+
+Autoaprendisaje, resolución de problemas e investigación
