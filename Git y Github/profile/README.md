@@ -29,3 +29,7 @@ Soy un apasionado de la tecnología enfocado en desarrollo Frontend con Angular 
 ### Contacto
 
 Si deseas contactarme puede hacerlo mediante mi LinkedIn
+
+### Hobbies
+
+Jugar videojuegos, escuchar música, salir a caminar y ver series
