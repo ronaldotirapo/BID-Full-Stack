@@ -43,3 +43,7 @@ Si deseas contactarme puede hacerlo mediante mi LinkedIn
 
 - Backend: Tengo conocimientos en Java con el framework Spring
 - Frontend: Me especializo en HTML, CSS y JavaScript con el framework Angular
+
+### Habilidades
+
+Autoaprendisaje, resolución de problemas e investigación
