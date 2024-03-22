@@ -39,6 +39,10 @@ Soy un apasionado de la tecnología enfocado en desarrollo Frontend con Angular 
 
 Si deseas contactarme puede hacerlo mediante mi LinkedIn
 
+### Hobbies
+
+Jugar videojuegos, escuchar música, salir a caminar y ver series
+
 ### Tecnologías
 
 - Backend: Tengo conocimientos en Java con el framework Spring
