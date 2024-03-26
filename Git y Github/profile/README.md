@@ -19,6 +19,7 @@
 | git remote add origin "url de repositorio remoto" | Establece un repositorio remoto llamado origin (puede colocarse otro nombre)                                                              |
 | git branch -M "nuevo nombre"                      | Cambia el nombre actual de la rama                                                                                                        |
 | git push -u origin "nombre de rama"               | Sube los cambios al repositorio remoto "origin" a la rama especificada y -u establece dicha rama como la "upstream" o rama de seguimiento |
+| git clone "url de repositorio remoto"             | Clona un repositorio remoto                                                                                                               |
 
 ## Estados de Git
 
