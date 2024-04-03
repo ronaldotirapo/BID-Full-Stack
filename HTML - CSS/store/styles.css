@@ -1,3 +1,5 @@
+/* Elementos */
+
 html,
 body {
     font-family: 'Inter', sans-serif;
@@ -23,18 +25,61 @@ footer {
     min-height: 368px;
 }
 
+/* IDs */
+
+section#hero {
+    border: 1px solid purple;
+    height: 340px;
+    background: url(./assets/hero_bg.png) no-repeat center center/cover;
+    /* El shorthand background define todas estas propiedades:
+    background-image: url(./assets/hero_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; //Esto tiene que separarse con / después de la posición
+    */
+}
+
+section#hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Clases */
+
 .container {
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
     border: 1px solid springgreen;
     height: inherit;
     min-height: inherit;
 }
 
+.title-container span {
+    display: block;
+    color: white;
+    font-weight: 700;
+}
+
+.title-container span:first-child {
+    font-size: 40px;
+}
+
+.title-container span:last-child {
+    font-size: 100px;
+    line-height: 80px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
 .product-card {
     background-color: #F0F0F0;
     border-radius: 14px;
-    max-width: 25%;
+    width: auto;
     overflow: hidden;
 }
 
@@ -95,4 +140,30 @@ footer {
     align-items: center;
     margin: 5px 0;
     color: #428f13;
+}
+
+@media screen and (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .title-container span:first-child {
+        font-size: 10vw;
+    }
+
+    .title-container span:last-child {
+        font-size: 20vw;
+    }
 }
