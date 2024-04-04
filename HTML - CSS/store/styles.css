@@ -2,34 +2,32 @@
 
 html,
 body {
+    margin: 0;
     font-family: 'Inter', sans-serif;
 }
 
 header {
-    border: 1px solid red;
-    height: 152px;
+    max-height: 30rem;
+    background-color: #ff3b3c;
+    padding: 1.5rem 0;
 }
 
 section {
-    border: 1px solid purple;
     height: 340px;
 }
 
 main {
-    border: 1px solid blue;
     height: auto;
 }
 
 footer {
-    border: 1px solid #009145;
     min-height: 368px;
 }
 
 /* IDs */
 
 section#hero {
-    border: 1px solid purple;
-    height: 340px;
+    height: 15rem;
     background: url(./assets/hero_bg.png) no-repeat center center/cover;
     /* El shorthand background define todas estas propiedades:
     background-image: url(./assets/hero_bg.png);
@@ -47,10 +45,70 @@ section#hero .container {
 
 /* Clases */
 
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.search .form {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.search .form input {
+    height: 62px;
+    border-radius: 14px;
+    border: none;
+    width: 20rem;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.search .social ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search .social ul li {
+    padding: 0 10px;
+}
+
+.nav {
+    padding: 2rem 0 0 0;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li a {
+    color: white;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.3rem 1rem;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
 .container {
     max-width: 1220px;
     margin: 0 auto;
-    border: 1px solid springgreen;
     height: inherit;
     min-height: inherit;
 }
@@ -59,6 +117,7 @@ section#hero .container {
     display: block;
     color: white;
     font-weight: 700;
+    padding: 0 0.5rem;
 }
 
 .title-container span:first-child {
@@ -74,6 +133,7 @@ section#hero .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    padding: 1.5rem 0.5rem;
 }
 
 .product-card {
@@ -151,6 +211,19 @@ section#hero .container {
 @media screen and (max-width: 768px) {
     .product-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo,
+    .form,
+    .social {
+        padding: 1rem 0;
     }
 }
 
