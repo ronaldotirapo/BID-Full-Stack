@@ -28,7 +28,7 @@ footer {
 
 section#hero {
     height: 15rem;
-    background: url(./assets/hero_bg.png) no-repeat center center/cover;
+    background: url(../assets/hero_bg.png) no-repeat center center/cover;
     /* El shorthand background define todas estas propiedades:
     background-image: url(./assets/hero_bg.png);
     background-repeat: no-repeat;
@@ -43,7 +43,14 @@ section#hero .container {
     justify-content: flex-start;
 }
 
-/* Clases */
+/* Barra de navegación */
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: inherit;
+    min-height: inherit;
+}
 
 .search {
     display: flex;
@@ -106,12 +113,7 @@ section#hero .container {
     text-decoration: underline;
 }
 
-.container {
-    max-width: 1220px;
-    margin: 0 auto;
-    height: inherit;
-    min-height: inherit;
-}
+/* Sección Hero */
 
 .title-container span {
     display: block;
@@ -129,6 +131,8 @@ section#hero .container {
     line-height: 80px;
 }
 
+/* Sección de productos */
+
 .product-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -141,6 +145,8 @@ section#hero .container {
     border-radius: 14px;
     width: auto;
     overflow: hidden;
+    text-decoration: none;
+    color: inherit;
 }
 
 .product-img {
@@ -202,6 +208,8 @@ section#hero .container {
     color: #428f13;
 }
 
+/* Footer */
+
 footer {
     border: 1px solid #009145;
     background-color: #7525A7;
@@ -255,6 +263,8 @@ footer .container {
     padding: 30px 0;
     box-sizing: border-box;
 }
+
+/* Media querys */
 
 @media screen and (max-width: 1024px) {
     .product-container {
