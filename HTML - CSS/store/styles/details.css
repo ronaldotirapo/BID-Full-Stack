@@ -9,7 +9,36 @@
 .product-checkout-block {
     display: flex;
     flex-direction: column;
-    max-width: 26rem;
+    max-width: 20rem;
+}
+
+.product-images-block {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: 100%;
+    gap: 0.5rem;
+    overflow: hidden;
+}
+
+.thumbnail-container {
+    grid-column: 1;
+    max-width: 6rem;
+}
+
+.thumbnail-container img,
+.selected-image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center center;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+}
+
+.selected-image-container {
+    grid-column: 2;
+    max-width: 20rem;
 }
 
 .description,
@@ -22,6 +51,8 @@
 .product-title {
     font-size: 2rem;
     font-weight: 700;
+    line-height: 2rem;
+    text-align: left;
 }
 
 .color {
@@ -39,6 +70,82 @@
 .product-subtitle {
     font-weight: bold;
     margin: 0 0 0.5rem 0;
+    text-align: left;
+}
+
+.product-description {
+    text-align: left;
+}
+
+.checkout-containter {
+    background-color: lightgrey;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+}
+
+.checkout-total-label {
+    color: #ff3bc3;
+}
+
+.checkout-total-price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0 0;
+}
+
+.checkout-description {
+    word-wrap: break-word;
+}
+
+.checkout-policy-list {
+    list-style-type: none;
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+.checkout-policy-list li {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.policy-icon {
+    margin: 0 1rem 0 0;
+}
+
+.checkout-process .buy {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.buy input {
+    height: 2.5rem;
+    width: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: none;
+    margin: 0 1rem 0 0;
+    padding: 0 1rem 0 2rem;
+}
+
+.btn-primary {
+    width: 100%;
+    border: none;
+    background-color: #ff3b3c;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    height: 2.5rem;
+}
+
+.btn-outline {
+    width: 100%;
+    border: 1px solid #ff3b3c;
+    color: #ff3b3c;
+    font-weight: bold;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
 }
 
 .sales-block {
