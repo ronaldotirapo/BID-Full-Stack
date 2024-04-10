@@ -43,12 +43,12 @@
 
 .description,
 .color,
-.product-description,
-.product-title {
+.description-paragraph,
+.product-name {
     margin: 0 0 2rem 0;
 }
 
-.product-title {
+.product-name {
     font-size: 2rem;
     font-weight: 700;
     line-height: 2rem;
@@ -73,7 +73,7 @@
     text-align: left;
 }
 
-.product-description {
+.description-paragraph {
     text-align: left;
 }
 
@@ -149,8 +149,18 @@
 }
 
 .sales-block {
-    margin: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin: 4rem 0 2rem 0;
+}
+
+.sales-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.product-container {
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

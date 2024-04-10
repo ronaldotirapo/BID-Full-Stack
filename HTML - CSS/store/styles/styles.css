@@ -107,6 +107,7 @@ section#hero .container {
     text-decoration: none;
     display: inline-block;
     margin: 0.3rem 1rem;
+    line-height: 2rem;
 }
 
 .nav ul li a:hover {
