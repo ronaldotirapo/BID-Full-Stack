@@ -1,0 +1,10 @@
+let frase = prompt('Ingrese una frase');
+let cantidadLetras = frase.length;
+const mensajeCantidaCaracteres = 'La cantidad de carácteres en la frase es: ' + cantidadLetras;
+alert(mensajeCantidaCaracteres);
+let fraseMayusculas = frase.toLocaleUpperCase();
+let fraseMinusculas = frase.toLocaleLowerCase();
+const mensajeMayusculas = 'La frase en mayúsculas es: ' + fraseMayusculas;
+const mensajeMinusculas = 'La frase en minúsculas es: ' + fraseMinusculas;
+alert(mensajeMayusculas);
+alert(mensajeMinusculas);
