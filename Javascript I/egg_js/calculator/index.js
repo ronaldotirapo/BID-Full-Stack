@@ -21,12 +21,14 @@ decremento--; // Decremento en 1
 
 /* Ejemplo de calculadora */
 //Esto utiliza un object wrapper para convertir el valor de entrada a un número
-const numero1 = Number(prompt('Ingrese el primer número'));
-const numero2 = Number(prompt('Ingrese el segundo número'));
-const resultadoSuma = numero1 + numero2;
+const cantidad = Number(prompt('Ingrese la cantidad de números a sumar'));
+let resultadoSuma = 0;
+for (let i = 0; i < cantidad; i++) {
+  resultadoSuma += Number(prompt('Ingrese un número a sumar'));
+}
 const mensajeSuma = 'El resultado de la suma es: ' + resultadoSuma;
 alert(mensajeSuma);
-const resultadoPromedio = (numero1 + numero2) / 2;
+const resultadoPromedio = resultadoSuma / 2;
 const resultadoTriplePromedio = resultadoPromedio * 3;
 const resultadoTriplePromedioMenosDiez = resultadoTriplePromedio - 10;
 const mensajeResultado =
