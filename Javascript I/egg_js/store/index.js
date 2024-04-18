@@ -1,39 +1,47 @@
 let totalPagar = 0;
 const body = document.querySelector('body');
 
-//Con uso de for y if
+/* //Con uso de for y if
 cantidadProductos = prompt('¿Cuantos productos desea comprar?');
 for (let index = 0; index < cantidadProductos; index++) {
-  nombreProducto = prompt('Ingrese el nombre del producto');
-  precioProducto = Number(prompt('Ingrese el precio del producto'));
-  cantidadProducto = Number(prompt('Ingrese la cantidad del producto'));
+  let nombreProducto = prompt('Ingrese el nombre del producto');
+  let precioProducto = Number(prompt('Ingrese el precio del producto'));
+  let cantidadProducto = Number(prompt('Ingrese la cantidad del producto'));
 
-  if (typeof precioProducto !== 'number' || typeof cantidadProducto !== 'number') {
+  if (typeof precio !== 'number') {
+    alert('El precio ingresado no es un número');
+    return;
+  }
+  if (typeof cantidad !== 'number') {
     alert('La cantidad ingresada no es un número');
-    continue;
+    return;
   }
 
-  subTotal = precioProducto * cantidadProducto;
+  let subTotal = precioProducto * cantidadProducto;
   alert('El subtotal a pagar por el producto ' + nombreProducto + ' es: ' + subTotal);
   //Con innerHTML puedo utilizar <br> a comparación de innerText
   body.innerHTML +=
     'El subtotal a pagar por el producto ' + nombreProducto + ' es: ' + subTotal + '<br>';
   totalPagar += subTotal;
 }
-
+ */
 /* //Con uso de while
 let contador = 0;
 while (contador < cantidadProductos) {
-  nombreProducto = prompt('Ingrese el nombre del producto');
-  precioProducto = Number(prompt('Ingrese el precio del producto'));
-  cantidadProducto = Number(prompt('Ingrese la cantidad del producto'));
+  let nombreProducto = prompt('Ingrese el nombre del producto');
+  let precioProducto = Number(prompt('Ingrese el precio del producto'));
+  let cantidadProducto = Number(prompt('Ingrese la cantidad del producto'));
 
-  if (typeof precioProducto !== 'number' || typeof cantidadProducto !== 'number') {
+  if (typeof precio !== 'number') {
+    alert('El precio ingresado no es un número');
+    return;
+  }
+  if (typeof cantidad !== 'number') {
     alert('La cantidad ingresada no es un número');
-    continue;
+    return;
   }
 
-  subTotal = precioProducto * cantidadProducto;
+  let subTotal = precioProducto * cantidadProducto;
   alert('El subtotal a pagar por el producto ' + nombreProducto + ' es: ' + subTotal);
   body.innerHTML +=
     'El subtotal a pagar por el producto ' + nombreProducto + ' es: ' + subTotal + '<br>';
@@ -44,22 +52,53 @@ while (contador < cantidadProductos) {
 /* //Con uso de do while
 let contador = 0;
 do {
-  nombreProducto = prompt('Ingrese el nombre del producto');
-  precioProducto = Number(prompt('Ingrese el precio del producto'));
-  cantidadProducto = Number(prompt('Ingrese la cantidad del producto'));
+  let nombreProducto = prompt('Ingrese el nombre del producto');
+  let precioProducto = Number(prompt('Ingrese el precio del producto'));
+  let cantidadProducto = Number(prompt('Ingrese la cantidad del producto'));
 
-  if (typeof precioProducto !== 'number' || typeof cantidadProducto !== 'number') {
+  if (typeof precio !== 'number') {
+    alert('El precio ingresado no es un número');
+    return;
+  }
+  if (typeof cantidad !== 'number') {
     alert('La cantidad ingresada no es un número');
-    continue;
+    return;
   }
 
-  subTotal = precioProducto * cantidadProducto;
+  let subTotal = precioProducto * cantidadProducto;
   alert('El subtotal a pagar por el producto ' + nombreProducto + ' es: ' + subTotal);
   body.innerHTML +=
     'El subtotal a pagar por el producto ' + nombreProducto + ' es: ' + subTotal + '<br>';
   totalPagar += subTotal;
   contador++;
 } while (contador < cantidadProductos); */
+
+//Con función flecha
+cantidadProductos = prompt('¿Cuantos productos desea comprar?');
+
+const calcularSubTotal = (precio, cantidad) => {
+  if (typeof precio !== 'number') {
+    alert('El precio ingresado no es un número');
+    return;
+  }
+  if (typeof cantidad !== 'number') {
+    alert('La cantidad ingresada no es un número');
+    return;
+  }
+  return precio * cantidad;
+};
+
+for (let index = 0; index < cantidadProductos; index++) {
+  let nombreProducto = prompt('Ingrese el nombre del producto');
+  let precioProducto = Number(prompt('Ingrese el precio del producto'));
+  let cantidadProducto = Number(prompt('Ingrese la cantidad del producto'));
+  let subTotal = calcularSubTotal(precioProducto, cantidadProducto);
+  alert('El subtotal a pagar por el producto ' + nombreProducto + ' es: ' + subTotal);
+  //Con innerHTML puedo utilizar <br> a comparación de innerText
+  body.innerHTML +=
+    'El subtotal a pagar por el producto ' + nombreProducto + ' es: ' + subTotal + '<br>';
+  totalPagar += subTotal;
+}
 
 alert('El total a pagar es: ' + totalPagar);
 body.innerHTML += 'El total a pagar es: ' + totalPagar + '<br>';
