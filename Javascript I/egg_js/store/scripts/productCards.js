@@ -1,5 +1,3 @@
-import { products } from './products.js';
-
 const createTemplateCard = (product) => {
   return `<a class="product-card" href="./details.html">
     <img src="${product.images[0]}" alt="${product.title}" class="product-img">
@@ -21,15 +19,12 @@ const createTemplateCard = (product) => {
     </a>`;
 };
 
-const productsTemplate = products
-  .map((product) => {
-    return createTemplateCard(product);
-  })
-  .join('');
-
-const printCards = (arrayOfProducts, idSelector) => {
+export const printCards = (arrayOfProducts, idSelector) => {
   const productsSelector = document.getElementById(idSelector);
-  productsSelector.innerHTML = arrayOfProducts;
+  const productsTemplate = arrayOfProducts
+    .map((product) => {
+      return createTemplateCard(product);
+    })
+    .join('');
+  productsSelector.innerHTML = productsTemplate;
 };
-
-printCards(productsTemplate, "products");
