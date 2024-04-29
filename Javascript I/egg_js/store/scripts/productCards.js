@@ -1,5 +1,5 @@
 const createTemplateCard = (product) => {
-  return `<a class="product-card" href="./details.html">
+  return `<a class="product-card" href="./details.html?id=${product.id}">
     <img src="${product.images[0]}" alt="${product.title}" class="product-img">
     <div class="product-info">
         <span class="product-title">
@@ -10,7 +10,7 @@ const createTemplateCard = (product) => {
         </span>
         <div class="product-price-block">
             <span class="price">$${product.price}</span>
-            <span class="discount">$${product.price * 0.1}</span>
+            <span class="discount">${product.onsale ? `$${product.price * 0.1} off` : ''}</span>
         </div>
     </div>
     <div class="product-tax-policy">

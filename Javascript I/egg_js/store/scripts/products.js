@@ -28,72 +28,71 @@ class Product {
     this.stock -= units;
   }
 }
-
 const prod1 = new Product(
   1,
-  'Laptop',
+  'Apple Laptop Pro',
   2000,
   5,
-  ['./assets/mock1.jpg', 'img2'],
+  ['./assets/mock1.jpg', './assets/mock2.jpg'],
   false,
   'Apple',
-  'blue',
-  'Apple blue laptop',
+  ['Blue', 'Green', 'Red'],
+  'Esta es una laptop de alto rendimiento de Apple. Perfecta para profesionales y usuarios avanzados. Cuenta con una pantalla de alta resolución, procesador potente y almacenamiento rápido.',
 );
 const prod2 = new Product(
   2,
-  'Smartwatch',
+  'Huawei Smartwatch 2',
   300,
   12,
-  ['./assets/mock2.jpg', 'img2'],
+  ['./assets/mock2.jpg', './assets/mock1.jpg'],
   true,
   'Huawei',
-  'red',
-  'Huawei red smartwatch',
+  ['Red', 'Yellow', 'Purple'],
+  'Este es un elegante smartwatch de Huawei. Mantente conectado y realiza un seguimiento de tu estado físico con estilo. Cuenta con una pantalla táctil a color, monitor de frecuencia cardíaca y resistencia al agua.',
 );
 const prod3 = new Product(
   3,
-  'Tablet',
+  'Samsung Tablet S7',
   500,
   10,
-  ['./assets/mock1.jpg', 'img2'],
+  ['./assets/mock1.jpg', './assets/mock2.jpg'],
   false,
   'Samsung',
-  'green',
-  'Samsung green tablet',
+  ['Green', 'Orange', 'Pink'],
+  'Esta es una potente tablet de Samsung. Disfruta de una pantalla impresionante y productividad sobre la marcha. Cuenta con un procesador rápido, gran capacidad de almacenamiento y soporte para lápiz óptico.',
 );
 const prod4 = new Product(
   4,
-  'Smartphone',
+  'Xiaomi Smartphone 12',
   200,
   24,
-  ['./assets/mock2.jpg', 'img2'],
+  ['./assets/mock2.jpg', './assets/mock1.jpg'],
   true,
   'Xiaomi',
-  'white',
-  'Xiaomi white smartphone',
+  ['White', 'Black', 'Silver'],
+  'Este es un smartphone repleto de funciones de Xiaomi. Captura fotos increíbles y disfruta de un rendimiento rápido. Cuenta con una cámara de alta resolución, batería de larga duración y desbloqueo facial.',
 );
 const prod5 = new Product(
   5,
-  'Smartphone',
+  'Oppo Smartphone X3',
   250,
   30,
-  ['./assets/mock1.jpg', 'img2', 'img3'],
+  ['./assets/mock1.jpg', './assets/mock2.jpg', 'img3'],
   true,
   'Oppo',
-  'indigo',
-  'Oppo indigo smartphone',
+  ['Indigo', 'Cyan', 'Magenta'],
+  'Este es un elegante smartphone de Oppo. Experimenta una pantalla impresionante y un rendimiento potente. Cuenta con una cámara versátil, carga rápida y diseño delgado.',
 );
 const prod6 = new Product(
   6,
-  'Smartphone',
+  'Redmagic Smartphone Pro',
   350,
   40,
-  ['./assets/mock2.jpg', 'img2', 'img3'],
+  ['./assets/mock2.jpg', './assets/mock1.jpg', 'img3'],
   true,
   'Redmagic',
-  'black',
-  'Redmagic black smartphone',
+  ['Black', 'Gray', 'Brown'],
+  'Este es un smartphone de juegos de Redmagic. Sumérgete en el mundo de los juegos móviles. Cuenta con una pantalla de alta frecuencia de actualización, procesador potente y refrigeración líquida.',
 );
 
 export const products = [prod1, prod2, prod3, prod4, prod5, prod6];
