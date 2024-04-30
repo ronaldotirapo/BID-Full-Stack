@@ -5,7 +5,7 @@ const createTemplateCard = (product) => {
         <span class="product-title">
             ${product.title}
         </span>
-        <span class="product-description">
+        <span class="product-description product-description-truncated-multiline">
             ${product.description}
         </span>
         <div class="product-price-block">

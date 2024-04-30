@@ -8,11 +8,14 @@ const createTemplateDetail = (product) => {
   return `<div class="product-images-block">
     <div class="thumbnail-container">
         ${product.images
-          .map((image, index) => `<img src="${image}" alt="Miniatura ${index++}" />`)
+          .map(
+            (image, index) =>
+              `<img class="thumbnail-image" src="${image}" alt="Miniatura ${index++}" />`,
+          )
           .join('')}
     </div>
     <div class="selected-image-container">
-        <img src="${product.images[0]}" alt="Imagen seleccionada" />
+        <img src="${product.images[0]}" alt="Imagen seleccionada" id="selected-image" />
     </div>
 </div>
 <div class="product-description-block">
@@ -37,7 +40,7 @@ const createTemplateDetail = (product) => {
         <span class="checkout-total-label">
             Total
         </span>
-        <h2 class="checkout-total-price">
+        <h2 class="checkout-total-price" id="subTotal">
             $${product.price}
         </h2>
         <p class="checkout-description">
@@ -60,7 +63,7 @@ const createTemplateDetail = (product) => {
         </ul>
         <div class="checkout-process">
             <div class="buy">
-                <input type="number" value="1">
+                <input type="number" value="1" id="quantity">
                 <button class="btn-primary">
                     Comprar
                 </button>
@@ -75,6 +78,20 @@ const createTemplateDetail = (product) => {
 </div>`;
 };
 
+const changeMini = (event) => {
+  const route = event.target.src;
+  const selectedImage = document.getElementById('selected-image');
+  selectedImage.src = route;
+  console.log('hola');
+};
+
+const changeSubTotal = (event) => {
+  const quantity = event.target.value;
+  const productPrice = products.find((product) => product.id.toString() === id.toString()).price;
+  const subTotal = document.getElementById('subTotal');
+  subTotal.textContent = `$${productPrice * quantity}`;
+};
+
 const printDetails = (id) => {
   const productFounded = products.find((product) => {
     return product.id.toString() === id.toString();
@@ -85,3 +102,11 @@ const printDetails = (id) => {
 };
 
 printDetails(id);
+
+const thumbnailImages = document.getElementsByClassName('thumbnail-image');
+for (let i = 0; i < thumbnailImages.length; i++) {
+  thumbnailImages[i].addEventListener('click', changeMini);
+}
+
+const quantity = document.getElementById('quantity');
+quantity.addEventListener('change', changeSubTotal);

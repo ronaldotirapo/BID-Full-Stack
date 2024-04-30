@@ -14,7 +14,7 @@ const captureText = (event) => {
     printCards(products, idSelector);
   } else if (searchText) {
     const productsFiltered = products.filter((product) => {
-      return product.title.toLowerCase().startsWith(searchText.toLowerCase());
+      return product.title.toLowerCase().includes(searchText.toLowerCase());
     });
     printCards(productsFiltered, idSelector);
   }

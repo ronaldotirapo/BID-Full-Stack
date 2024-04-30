@@ -167,6 +167,9 @@ section#hero .container {
     font-weight: 600;
     word-wrap: break-word;
     display: block;
+    height: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product-description {
@@ -174,6 +177,20 @@ section#hero .container {
     font-weight: 400;
     color: dimgray;
     margin: 0 0 6px 0;
+}
+
+.product-description-trucated-line {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-description-truncated-multiline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
 }
 
 .product-price-block {
