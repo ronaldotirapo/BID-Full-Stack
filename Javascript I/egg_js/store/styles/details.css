@@ -148,6 +148,12 @@
     background-color: #FFFFFF;
 }
 
+.btn-outline:hover {
+    background-color: #ff3b3c;
+    color: white;
+    cursor: pointer;
+}
+
 .sales-block {
     margin: 4rem 0 2rem 0;
 }

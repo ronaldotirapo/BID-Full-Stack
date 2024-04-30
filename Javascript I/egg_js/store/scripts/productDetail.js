@@ -63,13 +63,13 @@ const createTemplateDetail = (product) => {
         </ul>
         <div class="checkout-process">
             <div class="buy">
-                <input type="number" value="1" id="quantity">
+                <input type="number" value="1" id="quantity" min="1">
                 <button class="btn-primary">
                     Comprar
                 </button>
             </div>
             <div class="add-to-car">
-                <button class="btn-outline">
+                <button class="btn-outline" id="add-to-car">
                     Añadir al carrito
                 </button>
             </div>
@@ -92,6 +92,28 @@ const changeSubTotal = (event) => {
   subTotal.textContent = `$${productPrice * quantity}`;
 };
 
+const saveProduct = () => {
+  const found = products.find((product) => product.id.toString() === id.toString());
+  const product = {
+    id: found.id,
+    title: found.title,
+    image: found.images[0],
+    price: found.price,
+    quantity: document.getElementById('quantity').value,
+    color: document.getElementById('color').value,
+    subtotal: document.getElementById('subTotal').innerText,
+  };
+
+  if (localStorage.getItem('cart')) {
+    const cart = [...JSON.parse(localStorage.getItem('cart'))];
+    cart.push(product);
+    localStorage.setItem('cart', JSON.stringify(cart));
+  } else {
+    const stringifiedProduct = JSON.stringify([product]);
+    localStorage.setItem('cart', stringifiedProduct);
+  }
+};
+
 const printDetails = (id) => {
   const productFounded = products.find((product) => {
     return product.id.toString() === id.toString();
@@ -110,3 +132,6 @@ for (let i = 0; i < thumbnailImages.length; i++) {
 
 const quantity = document.getElementById('quantity');
 quantity.addEventListener('change', changeSubTotal);
+
+const addToCar = document.getElementById('add-to-car');
+addToCar.addEventListener('click', saveProduct);
