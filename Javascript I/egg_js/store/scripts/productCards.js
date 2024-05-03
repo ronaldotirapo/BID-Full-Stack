@@ -9,8 +9,8 @@ const createTemplateCard = (product) => {
             ${product.description}
         </span>
         <div class="product-price-block">
-            <span class="price">$${product.price}</span>
-            <span class="discount">${product.onsale ? `$${product.price * 0.1} off` : ''}</span>
+            <span class="price">${product.getformatPrice()}</span>
+            <span class="discount">${product.onsale ? `${product.baseCurrency} ${product.price * product.discount} off` : ''}</span>
         </div>
     </div>
     <div class="product-tax-policy">

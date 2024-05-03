@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda virtual</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/details.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script defer src="./scripts/layout.js"></script>
+    <script defer src="./scripts/cart.js" type="module"></script>
+    <script defer src="./scripts/total.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="search">
+                <a class="logo" href="./index.html">
+                    <img src="./assets/tiendamia-logo.svg" width="218" alt="Logo store">
+                </a>
+                <!--<div class="form">
+                    <form>
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div> -->
+                <div class="social">
+                    <ul>
+                        <li>
+                            <img src="./assets/facebook.png" alt="Facebook">
+                        </li>
+                        <li>
+                            <img src="./assets/instagram.png" alt="Instagram">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav" id="nav">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <div class="title-container">
+                <span>mi</span>
+                <span>carrito</span>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="container cart-container">
+            <article id="cart-products" class="cart-article">
+                <!-- <div class="product-card product-info cart-info">
+                    <img src="./assets/mock1.jpg" alt="" class="cart-img">
+                    <div class="column-cart-info">
+                        <span class="product-title">
+                            Apple Laptop Pro
+                        </span>
+                        <span class="product-description product-description-truncated-multiline">
+                            Esta es una laptop de alto rendimiento de Apple. Perfecta para profesionales y usuarios
+                            avanzados. Cuenta con una pantalla de alta resolución, procesador potente y almacenamiento
+                            rápido
+                        </span>
+                        <div class="buy">
+                            <input type="number" id="quantity" min="1" readonly>
+                        </div>
+                    </div>
+                    <div class="product-price-block column-cart-info">
+                        <span class="price">$2000</span>
+                        <span class="discount">Descuento</span>
+                    </div>
+                </div> -->
+            </article>
+            <article id="total" class="cart-article">
+                <!-- <div class="product-card product-info cart-info">
+                    <span class="product-title">
+                        Resumen del pedido
+                    </span>
+                    <div>
+                        <span class="checkout-total-label">
+                            Total
+                        </span>
+                        <h2 class="checkout-total-price">
+                            $2000
+                        </h2>
+                    </div>
+                    <div class="product-tax-policy">
+                        Incluye impuestos del país
+                    </div>
+                    <button class="btn-primary">
+                        Comprar
+                    </button>
+                </div> -->
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="columns-container">
+
+            </div>
+            <div class="copyright">
+                Curso de HTML + CSS 2024
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -41,11 +41,17 @@ const createTemplateDetail = (product) => {
             Total
         </span>
         <h2 class="checkout-total-price" id="subTotal">
-            $${product.price}
+            $${product.getformatPrice()}
         </h2>
         <p class="checkout-description">
             Incluye impuestos del país. 
-            ${product.onsale ? `Aplicado cupón de descuento de $${product.price * 0.1}` : ''}
+            ${
+              product.onsale
+                ? `Aplicado descuento de ${product.baseCurrency} ${
+                    product.price * product.discount
+                  }`
+                : ''
+            }
         </p>
         <ul class="checkout-policy-list">
             <li>
@@ -82,14 +88,16 @@ const changeMini = (event) => {
   const route = event.target.src;
   const selectedImage = document.getElementById('selected-image');
   selectedImage.src = route;
-  console.log('hola');
 };
 
 const changeSubTotal = (event) => {
   const quantity = event.target.value;
   const productPrice = products.find((product) => product.id.toString() === id.toString()).price;
+  const baseCurrency = products.find(
+    (product) => product.id.toString() === id.toString(),
+  ).baseCurrency;
   const subTotal = document.getElementById('subTotal');
-  subTotal.textContent = `$${productPrice * quantity}`;
+  subTotal.textContent = `${baseCurrency} ${productPrice * quantity}`;
 };
 
 const saveProduct = () => {
@@ -97,8 +105,10 @@ const saveProduct = () => {
   const product = {
     id: found.id,
     title: found.title,
+    description: found.description,
     image: found.images[0],
     price: found.price,
+    discount: found.discount,
     quantity: document.getElementById('quantity').value,
     color: document.getElementById('color').value,
     subtotal: document.getElementById('subTotal').innerText,

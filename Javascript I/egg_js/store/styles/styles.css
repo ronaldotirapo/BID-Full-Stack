@@ -196,6 +196,9 @@ section#hero .container {
 .product-price-block {
     display: flex;
     flex-wrap: wrap;
+    margin: 5px 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .product-price-block .price {
@@ -208,13 +211,6 @@ section#hero .container {
     font-size: 12px;
     font-weight: 700;
     color: #428f13;
-}
-
-.product-price-block {
-    display: flex;
-    margin: 5px 0;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .product-tax-policy {
